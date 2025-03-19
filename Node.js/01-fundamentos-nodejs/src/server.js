@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
       email: 'laerciofernandesmelonetoo@gmail.com'
     });
 
-    return res.end('Usuário criado comsucesso!');
+    return res.writeHead(201).end();
   }
 
   return res.end('EU VOU VENCER!');
